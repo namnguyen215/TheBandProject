@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+}
+
+
+/* Vị trí
+Kích thước
+Màu sắc
+Kiểu dáng */
+
+.clear {
+    clear: both;
+}
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li:hover #subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav #subnav li:hover a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 24px;
+}
+
+#nav .nav-down {
+    font-size: 12px;
+}
+
+#nav #subnav {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav #subnav a {
+    text-decoration: none;
+    min-width: 160px;
+    padding: 0 16px;
+    line-height: 38.4px;
+    color: black;
+    background-color: #fff;
+}
+
+#header .search-btn {
+    color: #fff;
+    float: right;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+
+#slider {
+    /* height: 1000px; */
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/chicago.jpg') top center/cover no-repeat;
+}
+
+#slider .slider-txt {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 32px 16px 32px 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider .city {
+    padding-bottom: 25px;
+    font-weight: 450;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 64px;
+}
+
+#content .content-heading {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+#content .content-subheading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#content .content-txt {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#content .member-list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 0;
+}
+
+#content .mem-card {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+#content .member-name {
+    margin: 15px;
+}
+
+#content .img-member {
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .tour-dates {
+    background-color: black;
+    color: white;
+}
+
+#content .dates {
+    list-style: none;
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+}
+
+#content .dates li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#content .dates .status {
+    background-color: #f44336;
+    padding: 2px 4px;
+    margin-left: 16px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+#content .dates .month {
+    opacity: 0.7;
+}
+
+#content .dates .left {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+}
+
+.places {
+    margin: 32px -8px 0;
+}
+
+.places .places-item {
+    float: left;
+    width: 33.3333333%;
+    padding: 0 8px;
+    color: black;
+}
+
+.places .place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.places .places-city {}
+
+.places .img-box {
+    height: 184px;
+    overflow: hidden;
+}
+
+.places .img-box .places-img {
+    width: 100%;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.places .img-box:hover img {
+    opacity: 0.7;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.places .places-time {
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.places .places-desc {
+    margin-top: 20px;
+}
+
+.places .buy-btn {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.places .buy-btn:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+#footer {}
