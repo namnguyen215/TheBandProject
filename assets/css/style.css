@@ -6,6 +6,7 @@
 
 html {
     font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -150,7 +151,7 @@ ul {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/chicago.jpg') top center/cover no-repeat;
+    background: url('../img/chicago.jpg') top center/cover no-repeat;
 }
 
 #slider .slider-txt {
