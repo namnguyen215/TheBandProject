@@ -14,9 +14,64 @@ Kích thước
 Màu sắc
 Kiểu dáng */
 
+
+/* Common */
+
+ul {
+    list-style: none;
+}
+
 .clear {
     clear: both;
 }
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* Main */
 
 #main {}
 
@@ -26,6 +81,7 @@ Kiểu dáng */
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 3;
 }
 
 #nav {
@@ -116,7 +172,7 @@ Kiểu dáng */
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 16px 64px;
+    padding: 64px 16px 112px;
 }
 
 #content .content-heading {
@@ -262,9 +318,73 @@ Kiểu dáng */
     padding: 8px 16px;
 }
 
-.places .buy-btn:hover {
+.places .buy-btn:hover,
+.contact-form .submit-btn:hover {
     color: black;
     background-color: #ccc;
+    cursor: pointer;
 }
 
-#footer {}
+
+/* CONTACT SECTION */
+
+.contact-content {
+    padding-top: 32px;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-info li {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .content-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.contact-form .submit-btn {
+    float: right;
+    margin: 16px 8px;
+    color: white;
+    padding: 8px 16px;
+    background-color: black;
+    border: 1px;
+}
+
+.map .map-img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px 16px;
+}
+
+#footer .social {
+    text-align: center;
+}
+
+#footer .social a {
+    text-decoration: none;
+    color: rgba(87, 87, 87, 0.842);
+}
+
+#footer .social a:hover {
+    opacity: 0.7;
+}
