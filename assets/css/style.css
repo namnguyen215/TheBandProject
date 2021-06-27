@@ -99,9 +99,14 @@ ul {
 }
 
 #nav>li:hover>a,
-#nav #subnav li:hover a {
+#nav #subnav li:hover a,
+#nav .mobile-more-alternative li:hover a {
     color: black;
     background-color: #ccc;
+}
+
+#nav .mobile-more-alternative {
+    display: none;
 }
 
 #nav>li>a {
@@ -135,15 +140,25 @@ ul {
     background-color: #fff;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     color: #fff;
     float: right;
     padding: 0 24px;
     line-height: 46px;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+}
+
 #header .search-btn:hover {
     background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #slider {
@@ -171,6 +186,7 @@ ul {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px 112px;
@@ -203,6 +219,7 @@ ul {
 
 #content .member-list {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 32px 0;
@@ -285,7 +302,6 @@ ul {
 .places .places-city {}
 
 .places .img-box {
-    height: 184px;
     overflow: hidden;
 }
 
@@ -317,6 +333,7 @@ ul {
     color: #fff;
     text-decoration: none;
     padding: 8px 16px;
+    text-align: center;
 }
 
 .places .buy-btn:hover,
@@ -345,6 +362,14 @@ ul {
 .contact-info li {
     font-weight: 500;
     line-height: 1.5;
+}
+
+.contact-info a {
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {

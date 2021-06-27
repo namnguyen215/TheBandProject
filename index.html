@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
 </head>
 
@@ -19,7 +20,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
+                <li class="mobile-more">
                     <a href="#">
                         More
                         <i class="nav-down ti-arrow-circle-down "></i>
@@ -30,13 +31,24 @@
                         <li><a href="#">Media</a></li>
                     </ul>
                 </li>
+                <ul class="mobile-more-alternative">
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
             </ul>
             <!-- End: Nav -->
             <!-- Begin: Search Button -->
-            <div class="search-btn ">
+            <div class="search-btn">
                 <i class="ti-search"></i>
             </div>
             <!-- End: Search Button -->
+
+            <!-- Begin:Mobile Menu -->
+            <div class="mobile-menu-btn" id="mobile-menu">
+                <i class="ti-menu"></i>
+            </div>
+            <!-- End:Mobile Menu -->
 
 
         </div>
@@ -97,7 +109,7 @@
                                 <h3 class="places-city">New York</h3>
                                 <p class="places-time">Fri 27 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy Tickets</a>
+                                <a href="#tour" class="buy-btn full-sm-width">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="places-item">
@@ -108,7 +120,7 @@
                                 <h3 class="places-city">Paris</h3>
                                 <p class="places-time">Sat 28 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy Tickets</a>
+                                <a href="#tour" class="buy-btn full-sm-width">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="places-item">
@@ -119,7 +131,7 @@
                                 <h3 class="places-city">San Francisco</h3>
                                 <p class="places-time">Sun 29 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-btn">Buy Tickets</a>
+                                <a href="#tour" class="buy-btn full-sm-width">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -134,19 +146,19 @@
                 <h2 class="content-heading">CONTACT</h2>
                 <p class="content-subheading">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <ul class="col col-half contact-info">
+                    <ul class="col col-half contact-info col-sm-full">
                         <li><i class="ti-location-pin"></i>Chicago, US</li>
-                        <li><i class="ti-mobile"></i>Phone: +00 151515</li>
-                        <li><i class="ti-email"></i>Email: mail@mail.com</li>
+                        <li><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></li>
+                        <li><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
                     </ul>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half contact-form col-sm-full sm-mt-32">
                         <form action="">
 
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half col-sm-full">
                                     <input type="text" class="content-input " required placeholder="Name">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half col-sm-full mt-8">
                                     <input type="email" class="content-input " required placeholder="Email">
                                 </div>
                             </div>
@@ -156,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="row mt-8">
-                                <input type="submit" class="submit-btn" value="SEND">
+                                <input type="submit" class="submit-btn full-sm-width" value="SEND">
                             </div>
                         </form>
                     </div>
@@ -183,6 +195,7 @@
             <p class="social">Created by <a href="https://www.instagram.com/stian_215/">Nam Nguyen</a></p>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
